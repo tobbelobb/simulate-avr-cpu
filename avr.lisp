@@ -11,7 +11,7 @@
 ;;   * That SBCL can potentially generate really fast code.
 ;;       Use profiler (sb-prof).
 ;;       Turn off type checks locally within a function with (declare (optimize (safety 0))). Very unlispy.
-;;       (declare (optimize (speed 3))) can sometimes give faster code.
+;;       (declare (optimize (speed 3) (debug 0))) can sometimes give faster code.
 ;;       Use (disassemble) to check resulting asm if aggressivly optimizing speed and safety...
 ;;   * SBCL does type inference, so (describe 'some-function-with-declared-types) or
 ;;       (describe 'some-function-using-return-values-of-function-which-has-declared-types)
